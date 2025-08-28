@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KARUSEL — Бонусная (конусная) программа</title>
+  <meta name="description" content="Каждая 20‑я оплата пакета игр — бесплатно. 200 ₽ = 4 игры. Получайте ~5% обратно бонусами.">
+  <meta name="theme-color" content="#0d0d0f">
+  <style>
+    :root{
+      --bg:#0d0d0f;--card:#141418;--text:#f6f6f7;--muted:#b9bbc6;
+      --accent:#F7CAC9;--mint:#0ABAB5;--gold:#d6b76c;--radius:18px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(10,186,181,.12), transparent),
+      radial-gradient(900px 600px at -10% 0%, rgba(247,202,201,.10), transparent),
+      var(--bg);
+      color:var(--text);
+      font-family:-apple-system,system-ui,Inter,Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+      line-height:1.55;
+    }
+    .wrap{max-width:920px;margin:0 auto;padding:28px 18px 40px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--gold),#f0e3b0 70%);box-shadow:0 6px 18px rgba(214,183,108,.35)}
+    .brand h1{margin:0;font-size:18px;letter-spacing:.4px}
+    .pill{border:1px solid rgba(255,255,255,.14);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:12px}
+    .hero{margin-top:8px;border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);padding:22px;background:linear-gradient(180deg,rgba(255,255,255,.04),transparent);position:relative;overflow:hidden}
+    .hero h2{margin:0 0 6px;font-size:28px}
+    .hero p{margin:0;color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+    .stat{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;text-align:center}
+    .stat b{display:block;font-size:18px;margin-bottom:6px;color:var(--accent)}
+    .grid{display:grid;gap:16px;margin-top:22px}
+    @media(min-width:860px){.grid{grid-template-columns:1.1fr .9fr}}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:20px}
+    h3{margin:0 0 10px;font-size:20px}
+    ul{margin:0;padding-left:18px;color:var(--muted)}
+    li{margin:8px 0}
+    .notice{margin-top:12px;border-left:4px solid var(--mint);padding:10px 12px;background:rgba(10,186,181,.08);border-radius:12px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(247,202,201,.15);border:1px solid rgba(247,202,201,.4);color:#ffe; font-size:12px}
+    .hr{height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.12),transparent);margin:14px 0}
+    footer{margin-top:26px;color:var(--muted);font-size:12px;text-align:center}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <h1>KARUSEL</h1>
+      </div>
+      <div class="pill">Конусная бонусная программа</div>
+    </header>
+
+    <section class="hero" role="region" aria-label="Вступление">
+      <span class="badge">Уважаемые клиенты KARUSEL</span>
+      <h2>Каждая 20‑я оплата — бесплатно 🎁</h2>
+      <p>Оплачивайте пакеты игр по 200 ₽ (4 игры). За каждую оплату вы получаете ~5% обратно бонусами. Наберите 19 оплат — и 20‑й пакет будет бесплатным.</p>
+      <div class="stats">
+        <div class="stat"><b>200 ₽</b><span>в 1 пакете (4 игры)</span></div>
+        <div class="stat"><b>19 оплат</b><span>и 20‑й пакет в подарок</span></div>
+        <div class="stat"><b>≈ 5% обратно</b><span>бонусами от каждой покупки</span></div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <section class="card" role="region" aria-label="Как это работает">
+        <h3>Как это работает?</h3>
+        <ul>
+          <li>Оплата всегда пакетами: <b>200 ₽ = 4 игры</b>.</li>
+          <li>За каждую оплату вы получаете <b>5% бонусов</b>.</li>
+          <li>Наберите <b>19 оплат</b> — <b>20‑й пакет (4 игры) бесплатно</b>.</li>
+          <li>Бонусы спишутся автоматически — на экране появится уведомление о бесплатной игре.</li>
+          <li>После каждой оплаты на экране показывается ваш текущий баланс бонусов.</li>
+        </ul>
+        <div class="notice">
+          💳 <b>Внимание:</b> бонусы накапливаются только при оплате <u>с одной и той же картой</u>. 
+          При оплате другой картой счётчик начнётся заново. Оплата через QR/наличными — баллы не начисляются (если не включена идентификация по телефону).
+        </div>
+      </section>
+
+      <section class="card" role="region" aria-label="Новости KARUSEL">
+        <h3>Новости KARUSEL</h3>
+        <p>Скоро мы откроем новый проект KARUSEL и запустим социальные сети. Вас ждут лайфхаки для выигрыша, коллекционные призы и новые открытия в мире развлечений.</p>
+        <div class="hr"></div>
+        <p style="opacity:.8">Желаем удачи и ярких побед! Ваша KARUSEL.</p>
+      </section>
+    </div>
+
+    <footer>
+      © KARUSEL, 2025
+    </footer>
+  </div>
+</body>
+</html>
